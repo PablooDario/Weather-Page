@@ -5,12 +5,15 @@ console.log(typeof(ApiClima));
 capitalize = str =>{return str.slice(0,1).toUpperCase() + str.slice(1,str.length).toLowerCase()};
 
 let imagen={
-    clear:"clear.png",
-    clouds:"clouds.png",
-    drizzle:"drizzle.png",
-    mist:"mist.png",
-    rain:"rain.png",
-    snow:"snow.png"
+    Soleado:"clear.png",
+    'Mayormente soleado':"clear.png",
+    Nublado:"clouds.png",
+    'Parcialmente nublado':"clouds.png",
+    Drizzle:"drizzle.png",
+    Mist:"mist.png",
+    Tormentas:"rain.png",
+    'Tormentas dispersas':"storm.png",
+    Snow:"snow.png"
 }
 
 buscar = () =>{
@@ -23,9 +26,9 @@ buscar = () =>{
         document.querySelector(".city").innerHTML=ApiClima[index].name + ", " + ApiClima[index].state
         document.querySelector(".precip").innerHTML=ApiClima[index].probabilityofprecip + "%"
         document.querySelector(".wind").innerHTML=ApiClima[index].windspeedkm + " km/h"
-        let clima=ApiClima[index].probabilityofprecip
-        if(clima>60)
-            document.querySelector("img").innerHTML="./img"+
+        let clima=ApiClima[index].skydescriptionlong
+        let img="./img/" + imagen[clima]
+        document.querySelector(".img-weather").src=img
     }
     else
     alert("El municipio a buscar es: error")
@@ -33,9 +36,8 @@ buscar = () =>{
 
 document.querySelector(".submit").addEventListener("click", buscar)
 
+
+
+//Obtener el objeto que tenga el valor de "Asientos" en la propiedad "name"
 var result = ApiClima.find(municipio => municipio.name === "Asientos");
 console.log(result.state)
-
-//Obtener el indice que tenga el valor de "Asientos" en la propiedad "name"
-
-//console.log(index)
