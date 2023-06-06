@@ -5,17 +5,22 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>CLIMA</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
         <div class="search">
             <label for="city">
-                <i class="fa-solid fa-location-arrow fa-2xl" style="color:#f1ed77;"></i>
+                <i class="fa-solid fa-location-arrow fa-2xl" style="color: rgb(134, 78, 13); padding-top: 14px;"></i>
             </label>
             <input type="text" placeholder="Ingresa tu ciudad">
-            <button type="submit" class="submit">
-                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #d45b5b;"></i>
-            </button>
+            <div class="submt">
+                <button type="submit" class="submit">
+                    <i class="fa-solid fa-magnifying-glass fa-xl" style="color:  rgb(134, 78, 13);"></i>
+                </button>
+            </div>
+            
         </div>
 
         <div class="weather">
@@ -27,17 +32,17 @@
             
             <div class="spec">
                 <div class="col">
-                    <i class="fa-solid fa-wind fa-xl item" style="color: white;"></i>
+                    <i class="fa-solid fa-wind fa-2xl item" style="color: rgb(97, 95, 95);"></i>
                     <div>
-                        <p>Viento</p>
                         <p class="wind">50 km/h</p>
+                        <p style="font-size: 15px;">Viento</p>
                     </div>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-cloud-showers-heavy fa-xl item" style="color: grey;"></i>
+                    <i class="fa-solid fa-cloud-showers-heavy fa-2xl item" style="color: grey;"></i>
                     <div>
-                       <p>Precipitación</p>
-                        <p class="precip">80%</p> 
+                        <p class="precip">80%</p>
+                        <p style="font-size: 15px;">Lluvia</p> 
                     </div>
                     
                 </div>   

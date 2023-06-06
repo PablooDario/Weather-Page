@@ -1,5 +1,5 @@
 html{
-   background-color: #1a3951;
+    background-color: #12213d;
 }
 
 *{
@@ -9,8 +9,7 @@ html{
 }
 
 .container{
-    background-color: #a3b2cc;
-    background-color: #98b7c2;
+    background-color: rgb(189, 185, 179);
     width: 380px;
     height: 550px;
     border-radius: 10%;
@@ -18,7 +17,7 @@ html{
     margin: 50px auto 0px;
     padding: 30px;
     position: relative;
-    border: white solid 2px;
+    border: rgb(134, 78, 13) solid 5px;
 }
 
 .search{
@@ -27,8 +26,6 @@ html{
     display: flex;
     align-items: center;
     justify-content: space-between;
-
-    /*border: #120c69 solid 2px;*/
 }
 
 .search > * {
@@ -36,33 +33,39 @@ html{
 }
 
 input{
-    border: 0px;
+    font-family: 'Poppins', sans-serif;
+    border: none;
+    outline: none;
     font-size: 20px;
     height: 50px;
-    width: 250px;
+    width: 240px;
     border-radius: 10px;
-    padding: 10px 15px 0px 15px;
-    background-color:#1a3951;
-    color: #a86d4d;
+    padding-left:10px;
+    background-color: rgb(216, 210, 201);
+    color: #172e5c;
 }
 
-input::placeholder{color: white;}
+input::placeholder{color: #172e5c;}
 
 .submit{
     border: 0;
     outline: 0;
-    background-color: #1a3951;
+    background-color: rgb(216, 210, 201);
     height: 40px;
-    width: 100%;
+    width: 40px;
     border-radius: 50%;
     cursor: pointer;
 }
 
 .weather{
-    margin: 50px -35px 0px -35px;
+    margin: 65px -35px;
     align-items: center;
     justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    color: #102347;
 }
+
+.principal{position: relative; top: -20px;}
 
 .img-weather{
     width: 200px;
@@ -70,14 +73,19 @@ input::placeholder{color: white;}
 }
 
 .weather h1{font-size: 40px;}
-.weather h2{font-size: 28px;}
+.weather h2{
+    font-size: 20px;
+    position: relative;
+    top: -15px;
+}
 
 .spec{
-    margin-top: 50px;
-    padding: 10px 35px;
+    padding: 12px 45px;
+    padding-left: 35px;
     justify-content: space-between;
     display: flex;
-    font-size: 20px;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
 }
 
 .item{margin-right: 10px;}
