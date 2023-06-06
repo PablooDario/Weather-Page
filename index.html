@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>CLIMA</title>
+</head>
+<body>
+    <div class="container">
+        <div class="search">
+            <label for="city">
+                <i class="fa-solid fa-location-arrow fa-2xl" style="color:#f1ed77;"></i>
+            </label>
+            <input type="text" placeholder="Ingresa tu ciudad">
+            <button type="submit" class="submit">
+                <i class="fa-solid fa-magnifying-glass fa-xl" style="color: #d45b5b;"></i>
+            </button>
+        </div>
+
+        <div class="weather">
+            <img src="./img/clouds.png" alt="clouds" class="img-weather">
+            <div class="principal">
+                <h1 class="tmp">22°C</h1><br>
+                <h2 class="city">Ciudad</h2>
+            </div>
+            
+            <div class="spec">
+                <div class="col">
+                    <i class="fa-solid fa-wind fa-xl item" style="color: white;"></i>
+                    <div>
+                        <p>Viento</p>
+                        <p class="wind">50 km/h</p>
+                    </div>
+                </div>
+                <div class="col">
+                    <i class="fa-solid fa-cloud-showers-heavy fa-xl item" style="color: grey;"></i>
+                    <div>
+                       <p>Precipitación</p>
+                        <p class="precip">80%</p> 
+                    </div>
+                    
+                </div>   
+            </div>
+        </div>
+    </div>
+    <script src="./JS/clima.js"></script>
+    <script src="./JS/index.js"></script>    
+</body>
+</html>
