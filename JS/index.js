@@ -4,6 +4,14 @@ console.log(typeof(ApiClima));
 
 capitalize = str =>{return str.slice(0,1).toUpperCase() + str.slice(1,str.length).toLowerCase()};
 
+error404= ()=>{Swal.fire({
+        icon: 'error',
+        title: 'Municipio Inexistente',
+        text: '¿Te has preguntado cual es el clima en la luna?',
+        footer: 'Prueba otro municipio'
+    });
+  }
+
 let imagen={
     Soleado:"clear.png",
     'Mayormente soleado':"clear.png",
@@ -39,7 +47,8 @@ buscar = () =>{
     }
     else
     {
-        alert("El municipio no existe")
+        error404()
+        //alert("El municipio no existe")
         document.querySelector(".meteor").style.display="block";
         document.querySelector(".tmp").innerHTML="-180°C"
         document.querySelector(".city").innerHTML="La Luna, Espacio"
@@ -63,7 +72,6 @@ buscar = () =>{
 document.querySelector(".submit").addEventListener("click", buscar)
 
 document.addEventListener("keypress", (event)=>{
-    console.log(event);
     if(document.querySelector("input").value.length>0 && event.key==="Enter")
         buscar()
 })
