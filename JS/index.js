@@ -72,7 +72,9 @@ buscar = () =>{
 document.querySelector(".submit").addEventListener("click", buscar)
 
 document.addEventListener("keypress", (event)=>{
-    if(document.querySelector("input").value.length>0 && event.key==="Enter")
+    if (Swal.isVisible() && event.key==="Enter")
+        Swal.close();
+    else if(document.querySelector("input").value.length>0 && event.key==="Enter")
         buscar()
 })
 
