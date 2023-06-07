@@ -9,22 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+    <div class="container" style="height: 130px;">
         <div class="search">
             <label for="city">
                 <i class="fa-solid fa-location-arrow fa-2xl" style="color: rgb(134, 78, 13); padding-top: 14px;"></i>
             </label>
-            <input type="text" placeholder="Ingresa tu ciudad">
+            <input type="text" placeholder="Ingresa tu municipio">
             <div class="submt">
                 <button type="submit" class="submit">
                     <i class="fa-solid fa-magnifying-glass fa-xl" style="color:  rgb(134, 78, 13);"></i>
                 </button>
             </div>
-            
         </div>
 
         <div class="weather">
-            <img src="./img/clouds.png" alt="clouds" class="img-weather">
+            <div class="imagen">
+                <img src="./img/clouds.png" alt="clouds" class="img-weather">
+            </div>
             <div class="principal">
                 <h1 class="tmp">22°C</h1><br>
                 <h2 class="city">Ciudad</h2>
@@ -39,10 +40,11 @@
                     </div>
                 </div>
                 <div class="col">
-                    <i class="fa-solid fa-cloud-showers-heavy fa-2xl item" style="color: grey;"></i>
+                    <i class="fa-solid fa-cloud-showers-heavy fa-2xl item cloud" style="color: grey;"></i>
                     <div>
                         <p class="precip">80%</p>
-                        <p style="font-size: 15px;">Lluvia</p> 
+                        <p style="font-size: 15px;">Lluvia</p>
+                        <p class="meteor" style="font-size: 15px;">De Meteoritos</p> 
                     </div>
                     
                 </div>   

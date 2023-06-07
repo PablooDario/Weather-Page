@@ -12,7 +12,6 @@ html{
 .container{
     background-color: rgb(189, 185, 179);
     width: 380px;
-    height: 550px;
     border-radius: 10%;
     text-align: center;
     margin: 50px auto 0px;
@@ -96,3 +95,5 @@ input::placeholder{color: #172e5c;}
     align-items: center;
     text-align: left;
 }
+
+.weather{display: none;}
